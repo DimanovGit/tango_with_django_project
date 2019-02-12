@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-{% load staticfiles %} <!-- New line -->
-<html>
-<head>
-<title>About Rango</title>
-</head>
-<body>
+
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+{% block title_block %}
+About
+{% endblock %}
+
+{% block body_block %}
 <h1>This work belongs to Dimanov</h1>
+<h3>All rights reserved</h3>
 <div>
-All rights reserved <br />
+ <br />
 </div>
-<div>
-<a href="/rango/">Index</a><br />
-<img src="{{ MEDIA_URL}}kitten.jpg"/>
+<div><img src="{{ MEDIA_URL}}kitten.jpg"/>
 alt="Picture of Kitten" /> <!-- New line -->
 </div>
-</body>
-</html>
+{% endblock %}
